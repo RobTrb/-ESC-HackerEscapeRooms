@@ -1,0 +1,115 @@
+html {
+    font-family: "Roboto";
+    font-size: 40px;
+    color: white;
+}
+
+body { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #011827;
+    font-size: 0.5rem;
+}
+
+.header_esc_logo {
+    padding-left: 20px;
+    width: 26%;
+}
+
+.header_text {
+    padding-left: 20px;
+    flex-direction: row;
+    width: 20%;
+    
+}
+
+.hacker_image {
+    width: 100%;    
+}
+
+.OnSiteOnline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 37px;    
+}
+
+.onSite {
+    display: flex;
+    background-color: #8acfe5;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #011827;
+    font-weight: bold;
+    font-size: 20px;
+    width: 308px;
+    height: 66px;
+    border-radius: 5px;
+}
+
+.online {
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #36769d;
+}
+
+.johnDoe {
+    display: flex;
+    max-width: 90%;    
+    margin-top: 20px;    
+}
+
+.popularChallenges {
+    color: black;
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.tiles_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* -webkit-overflow-scrolling: touch; */
+}
+
+.tile {
+    flex-direction: row;
+    flex: 0 0 auto;
+    width: 363px;
+    height: 446px;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #b6bdb5; 
+    color: black;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.tile a {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.tile_Image {
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
