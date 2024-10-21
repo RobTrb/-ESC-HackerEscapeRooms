@@ -108,17 +108,17 @@ header {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    /* -webkit-overflow-scrolling: touch; */
+    
 }
 
 .tile {
-    flex-direction: row;
+    flex-direction: column;
     flex: 0 0 auto;
     width: 363px;
     height: 446px;
     max-width: 363px;
     width: 90%;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
     overflow: hidden;
     border-radius: 5px;
@@ -129,23 +129,47 @@ header {
     margin-bottom: 5px;
 }
 
-.tile_Image {
+.tile_image {
     width: 100%;
     object-fit: contain;
     overflow: hidden;
 }
 
-.tile_stars {
-    margin-left: 10px;
-    object-fit: contain;
-}
-
-.tile a {
+.tile_roomTitle {
     padding-left: 10px;
     margin-top: 10px;
 }
 
+.tile_stars {    
+    object-fit: contain;    
+}
 
+.tile_participants {
+    font-size: 13px;
+    padding-right: 20%;
+}
+
+.tile_roomInfo {
+    font-size: 18px;    
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+    
+}
+
+.tile_book {
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #e3170a;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px 35px 12px 35px;
+    margin-left: 45%;
+              
+}
 
 .middleDivider {
     display: flex;
@@ -159,10 +183,23 @@ header {
     
 }
 
-.middleDivider a {
+.middleDivider_text {
     margin-top: 15%;
     width: 80%;
     text-align: center;
 
+}
+
+.middleDivider_readstory {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #8acfe5;
+    padding: 15px 55px 15px 55px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: #8acfe5;
+    margin-top: 30px;    
 }
 
