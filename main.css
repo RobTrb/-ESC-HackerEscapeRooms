@@ -191,6 +191,8 @@ header {
 
 }
 
+
+
 .middleDivider_readstory {
     text-decoration: none;
     font-size: 24px;
@@ -201,6 +203,34 @@ header {
     border-width: 2px;
     border-radius: 4px;
     border-color: #8acfe5;
-    margin-top: 30px;    
+    margin-top: 40px;    
 }
 
+.bottomHalfInfoContainers {
+    display: flex;    
+}
+
+.bottomHalfImageContainer {
+    width: 100%;
+    height:auto; 
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;   
+}
+
+.bottomHalfImages {
+    display: block;
+    position: absolute;
+    top: -10px;    
+    width: 100%;    
+    height: auto;
+    
+}
+
+.bottomHalfHeadlines {
+    display: flex;
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
