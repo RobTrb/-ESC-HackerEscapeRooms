@@ -38,7 +38,7 @@ header {
     width: 100%;    
 }
 
-.OnSiteOnline {
+.topHalf_OnSiteOnline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@ header {
     color: #36769d;
 }
 
-.johnDoe {
+.topHalf_johnDoe {
     display: grid;
     max-width: 439px;
     max-height: 122px;
@@ -78,33 +78,33 @@ header {
     color: black;       
 }
 
-.johnDoe_portrait {
+.topHalf_johnDoe_portrait {
     grid-column: 1;
     grid-row: 1 / span 3;
     
 }
 
-.johnDoe_bigText {
+.topHalf_johnDoe_bigText {
     grid-column: 2;
     grid-row: 1 / span 3;
     font-size: 17px;
 }
 
-.johnDoe_smallText {
+.topHalf_johnDoe_smallText {
     grid-column: 2;
     grid-row: 4;
     font-size: 10px;
     
 }
 
-.popularChallenges {
+.topHalf_popularChallenges {
     color: black;
     font-size: 0.6rem;
     font-weight: 400;
     padding-top: 50px;
 }
 
-.tiles_wrapper {
+.topHalf_tiles_wrapper {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -155,8 +155,7 @@ header {
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 400;
-    
+    font-weight: 400;    
 }
 
 .tile_book {
@@ -168,8 +167,7 @@ header {
     text-decoration: none;
     border-radius: 8px;
     padding: 12px 35px 12px 35px;
-    margin-left: 45%;
-              
+    margin-left: 45%;              
 }
 
 .middleDivider {
@@ -180,15 +178,13 @@ header {
     width: 100%;
     height: 20em;
     font-size: 20px;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 
 .middleDivider_text {
     margin-top: 15%;
     width: 80%;
     text-align: center;
-
 }
 
 .middleDivider_readstory {
@@ -204,13 +200,20 @@ header {
     margin-top: 40px;    
 }
 
-.bottomHalfInfoContainers {
+.bottomHalf_infoContainers_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.bottomHalf_infoContainers_bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 64px;
 }
 
-.bottomHalfImageContainer {
+.bottomHalf_imageContainer {
     width: 100%;
     height: auto;
     height:auto; 
@@ -220,16 +223,15 @@ header {
     display: inline-block;   
 }
 
-.bottomHalfImages {
+.bottomHalf_images {
     display: block;
     position: relative;
-    top: -10px;    
+    top: -13px;    
     width: 100%;    
-    height: auto;
-    
+    height: auto;    
 }
 
-.bottomHalfHeadlines {
+.bottomHalf_headlines {
     display: flex;
     text-align: left;
     color: #000;
@@ -238,19 +240,47 @@ header {
     margin: 20px 20px 10px 20px;
 }
 
-.bottomHalfText {
+.bottomHalf_text {
     color: #000;
     font-size: 24px;
     font-weight: 400;
     margin: 10px 20px 30px 20px;
 }
 
+.bottomHalf_onSite {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #e3170a;
+    padding: 19px 52px 19px 52px;
+    margin-left: 20px;
+    margin-top: 25px;   
+}
+
+.bottomHalf_seeAllChallenges {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #e3170a;
+    padding: 19px 56px 19px 56px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
 footer {
     background-color: #011827;
-    display: flex;
-    flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-top: 98px;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_headlines {
@@ -259,8 +289,7 @@ footer {
     margin: 0px;
     margin-top: 40px;
     margin-bottom: 7px;
-    margin-left: 20px;
-    
+    margin-left: 20px;    
 }
 
 .footer_text {
