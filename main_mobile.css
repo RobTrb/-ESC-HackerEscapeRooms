@@ -22,6 +22,10 @@ header {
     font-size: 0.5rem;
 }
 
+.header_nav {
+    display: none;
+}
+
 .header_esc_logo {
     padding-left: 20px;
     width: 26%;
@@ -76,6 +80,10 @@ header {
     grid-template-rows: 25% 25% 25% 25%;    
     margin-top: 20px;
     color: black;       
+}
+
+.topHalf_johnDoe_two{
+    display: none;
 }
 
 .topHalf_johnDoe_portrait {
