@@ -13,17 +13,23 @@ body {
 }
 
 header, .header_logoText_container {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     box-sizing: border-box;
-    width: 100%;    
     background-color: #011827;    
+}
+
+.header_text_container{    
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;        
 }
 
 .header_nav {
     display: none;
 }
-
 
 .header_esc_logo {
     margin-left: 27px;
@@ -34,13 +40,10 @@ header, .header_logoText_container {
 }
 
 .header_text {
-    width: 100%;
     font-size: 24px;
     padding-left: 13px;
     margin-top: 25px;
-    
-    flex-direction: column;
-    
+    margin-right: 80%;              
 }
 
 .hacker_image {
@@ -114,7 +117,9 @@ header, .header_logoText_container {
     color: black;
     font-size: 0.6rem;
     font-weight: 400;
-    padding-top: 50px;
+    margin-top: 105px;
+    margin-bottom: 34px;
+    
 }
 
 .topHalf_tiles_wrapper {
@@ -140,7 +145,8 @@ header, .header_logoText_container {
     color: black;
     font-size: 28px;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .tile_image {
