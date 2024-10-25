@@ -79,7 +79,14 @@ header, .header_logoText_container {
     color: #36769d;
 }
 
+.topHalf_johnDoeContainer {
+    width: 100%;
+    display: flex;    
+}
+
 .topHalf_johnDoe {
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     max-width: 439px;
     max-height: 122px;
