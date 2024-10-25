@@ -22,9 +22,11 @@ header, .header_logoText_container {
 
 .header_text_container{    
     align-items: flex-start;
+    justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    width: 100%;        
+    width: 100%;
+    padding-left: 0;        
 }
 
 .header_nav {
@@ -43,7 +45,7 @@ header, .header_logoText_container {
     font-size: 24px;
     padding-left: 13px;
     margin-top: 25px;
-    margin-right: 80%;              
+    margin-right: 80%;                 
 }
 
 .hacker_image {
@@ -51,6 +53,13 @@ header, .header_logoText_container {
 }
 
 .topHalf_OnSiteOnline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 37px;    
+}
+
+.topHalf_OnSiteOnline_lower {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +90,9 @@ header, .header_logoText_container {
 
 .topHalf_johnDoeContainer {
     width: 100%;
-    display: flex;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
 }
 
 .topHalf_johnDoe {
@@ -208,10 +219,18 @@ header, .header_logoText_container {
     margin-top: 30px;    
 }
 
+.middleDivider_textContainer {
+    width: 100%;
+    display: flex;
+    align-items:center;
+}
+
 .middleDivider_text {
     margin-top: 15%;
     width: 80%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .middleDivider_readstory {

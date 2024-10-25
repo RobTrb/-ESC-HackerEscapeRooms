@@ -9,6 +9,8 @@
         flex-direction: column;
         align-items: center;
         width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     header {        
@@ -27,7 +29,10 @@
     .header_text {
         font-size: 40px;
         font-weight: bold;
-        align-self:center;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 0;
+        margin-top: 61px;        
     }
 
     .header_nav {
@@ -40,18 +45,174 @@
         padding-top: 10px;
     }
 
-    .header_nav_item {
-        
+    .header_nav_item {        
         font-size: 24px;
         text-decoration: none;
         color: #fff;
     }
 
+    .header_nav_item:hover {
+        color: #8acfe5
+    }
+
+    .topHalf_hacker_imageContainer {
+        overflow: hidden;        
+    }
+
     .hacker_image {
         display: flex;
         overflow: hidden;
-        -ms-transform-origin-y: -262px;
+        object-fit: cover;
+        transform: translateY(-125px);
+    }
 
+    .topHalf_OnSiteOnline {
+        flex-direction: row-reverse;
+        padding: 0px;
+        transform: translateY(-158px);
+    }
+
+    .onSite {
+        margin-left: 17px;
+    }
+
+    .online {
+        display: flex;
+        background-color: #e3170a;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        width: 308px;
+        height: 66px;
+        border-radius: 5px;
+        margin: 0;
+    }
+
+    .topHalf_johnDoeContainer {
+        transform: translateY(-80px);
+    }
+
+    .topHalf_johnDoe {
+        margin-top: 0;
+        margin: 0px;
+    }
+
+    .topHalf_johnDoe_two {    
+        display: grid;
+        max-width: 439px;
+        max-height: 122px;
+        width: 80%;    
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 25% 25% 25% 25%;    
+        color: black;
+        margin-left: 21px;
+    }
+
+    .topHalf_popularChallenges {
+        margin-top: 0px;
+    }
+
+    .topHalf_OnSiteOnline_lower {
+        flex-direction: row-reverse;
+        padding: 0px;
+        margin-top: 77px;
+        margin-bottom: 87px
+    }
+
+    .middleDivider {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+    }
+    
+    .middleDivider_textContainer{
+       width: 50%;
+       margin-top: 123px;
+       align-content: center;
+    }
+
+    .middleDivider_text {
+        text-align: center;
+        margin-top: 0;
+        font-size: 25px;              
+    }
+
+    .middleDivider_readstory {
+        margin-top: 0;
+    }    
+
+    .bottomHalf_infoContainers_top {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .bottomHalf_textContainer_top {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .bottomHalf_infoContainers_bottom {
+        margin: 0;
+        height: 100%;        
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .bottomHalf_imageContainer {
+        width: 50%;
+    }
+
+    .bottomHalf_images {
+        top: 0;
+    }
+
+    .bottomHalf_headlines {
+        margin: 0px 108px 25px 116px;
+    }
+
+    .bottomHalf_text {
+        margin: 0px 108px 25px 116px;
+    }
+
+    .bottomHalf_onSite {
+        margin: 0px 108px 8px 116px;
+    }
+    
+    .bottomHalf_seeAllChallenges {
+        margin-top: 0;
+        margin-left: 116px;
+    }
+
+    .footer {
+        margin-top: 183px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 5px;
+        padding: 0;
+        padding-bottom: 174px;
+    }
+
+    .footer_escRoom_container {
+        grid-column: 2 / span 4;
+    }
+
+    .footer_siteMap_container {
+        grid-column: 8;
+    }
+
+    .footer_followUs_container {
+        grid-column: 10;
+    }
+
+    .footer_text, .footer_headlines, .footer_links {
+        margin:0;
+    }
+
+    .footer_headlines {
+        margin-top: 146px;
     }
     
 }
