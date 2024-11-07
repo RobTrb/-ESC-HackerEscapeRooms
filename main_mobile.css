@@ -54,52 +54,54 @@ header, .header_logoText_container {
 }
 
 .header_hamMenu span:nth-child(1) {
-    background-color: #02ff2c; 
     top: 25%; 
 }
 
-.header_hamMenu span:nth-child(2) {
-    background-color: #ff00ea; 
-       
-}
-
 .header_hamMenu span:nth-child(3) {
-    background-color: #e3170a; 
     top: 75%;
 }
 
 .header_hamMenu.active span:nth-child(1) {
-    background-color: #02ff2c; 
+    opacity: 0;
     top: 100%;
     left: -30px;
     transform: translate(0, 0);
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
+    animation: fadein 300ms;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
 }
 
 .header_hamMenu.active span:nth-child(2) {
-    opacity: 0;
-    background-color: #ff00ea; 
-       
+    opacity: 0;      
 }
 
 .header_hamMenu.active span:nth-child(3) {
-    background-color: #e3170a; 
+    opacity: 0;     
     top: 100%;
     left: -30px;
     transform: rotate(-45deg);
+    animation: fadein 300ms;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
 }
 
 .header_mobileMenuContainer {
-    
+    opacity: 0;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);    
     width: 100%;
     height: 100%;
-    display: flex;
-    
+    display: flex;    
 }
 
-.header_mobileMenu {    
+.header_mobileMenuContainer.active {
+    animation: fadein 300ms;    
+    animation-fill-mode: forwards; 
+}
+
+.header_mobileMenu {
+    opacity: 0;   
     width: 90%;
     height: 95%;
     position: relative;
@@ -107,8 +109,16 @@ header, .header_logoText_container {
     left: 5%;
     top: 23px;
     display: flex;
-    box-shadow: 0px 0px 5px 2px #676966;         
+    box-shadow: 0px 0px 5px 2px #676966;
+            
 }
+
+.header_mobileMenu.active {
+    animation: fadein 300ms;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards; 
+}
+
 .header_mobileMenu ul {
     margin-top: 200px;
     margin-left: auto;
@@ -450,4 +460,14 @@ footer {
 .break {
     width: 100%;
     height: 18px
+}
+
+@keyframes fadein {
+    0% {opacity: 0%}
+    100% {opacity: 100%}
+}
+
+@keyframes fadeout {
+    0% {opacity: 100%}
+    100% {opacity: 0%}
 }

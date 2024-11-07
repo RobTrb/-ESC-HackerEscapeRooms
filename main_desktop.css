@@ -35,6 +35,10 @@
         margin-top: 61px;        
     }
 
+    .header_hamMenu {
+        opacity: 0;      
+    }
+
     .header_nav {
         width: 100%;
         display: flex;
