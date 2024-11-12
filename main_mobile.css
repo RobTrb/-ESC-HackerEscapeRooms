@@ -130,6 +130,7 @@ header, .header_logoText_container {
     font-weight: 700;
     font-size: 36px;
     margin-top: 50px;
+    z-index: 50;
 }
 
 .header_nav {

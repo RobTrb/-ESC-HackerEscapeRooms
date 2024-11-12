@@ -47,6 +47,7 @@
         justify-content: space-evenly;
         padding-bottom: 22px;
         padding-top: 10px;
+        z-index: 1;
     }
 
     .header_nav_item {        
